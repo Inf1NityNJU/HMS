@@ -108,8 +108,8 @@
             <groupId>com.oracle</groupId>
             <artifactId>javaFX</artifactId>
             <version>1.8</version>
-            <!--<scope>system</scope>-->
-            <!--<systemPath>${basedir}/src/main/resources/lib/jfxrt.jar</systemPath>-->
+            <scope>system</scope>
+            <systemPath>${basedir}/src/main/resources/lib/jfxrt.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
