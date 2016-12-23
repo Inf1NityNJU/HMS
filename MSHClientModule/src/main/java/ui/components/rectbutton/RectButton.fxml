@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-focus-color: transparent; -fx-background-color: #00cccc; -fx-background-radius: 5px; -fx-border-radius: 5px;" stylesheets="@RectButton.css" text="Button" textAlignment="CENTER" textFill="WHITE" type="Button" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <font>
+      <Font name="PingFang SC Regular" size="14.0" />
+   </font>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</fx:root>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+
+<fx:root alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="2.0" styleClass="hbox" stylesheets="@StarLabel.css" type="HBox" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="numLabel" styleClass="num" text="4" />
+      <Label fx:id="starLabel" styleClass="star" text="Label" />
+   </children>
+   <padding>
+      <Insets left="6.0" right="6.0" />
+   </padding>
+</fx:root>

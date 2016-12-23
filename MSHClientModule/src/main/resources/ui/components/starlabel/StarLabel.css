@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../../../fonts/fontello.ttf');
+}
+.hbox {
+    -fx-background-color: #00cccc;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+}
+
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+}
+.num {
+    -fx-font-family: "Bangla MN";
+    -fx-padding: -7 0 -7 0;
+}
+
+.star {
+    -fx-font-family: "fontello";
+}

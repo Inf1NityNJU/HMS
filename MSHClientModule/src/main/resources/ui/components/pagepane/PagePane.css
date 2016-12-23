@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../../../fonts/fontello.ttf');
+}
+.button {
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #cccccc;
+    -fx-cursor: hand;
+}
+
+.left-button, .right-button {
+    -fx-font-family: "fontello";
+    -fx-font-size: 20px;
+}
+
+.left-button:hover, .right-button:hover {
+    -fx-text-fill: #00cccc;
+}
+
+.left-button:disabled, .right-button:disabled {
+    -fx-text-fill: #dddddd;
+    -fx-cursor: default;
+}
+
+.page-button.selected {
+    -fx-background-color: #00cccc;
+    -fx-text-fill: #ffffff;
+}
+
+.page-button:hover {
+    -fx-border-color: #00cccc;
+    -fx-text-fill: #00cccc;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="14.0" type="HBox" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fill="#00cccc" height="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="6.0" />
+      <Label fx:id="titleLabel" prefHeight="28.0" text="Label" textFill="#5b6e79">
+         <font>
+            <Font name="PingFang SC Regular" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

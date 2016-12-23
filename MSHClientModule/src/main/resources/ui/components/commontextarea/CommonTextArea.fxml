@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.text.Font?>
+
+
+<fx:root prefHeight="100.0" prefWidth="400.0" stylesheets="@CommonTextArea.css" type="TextArea"
+         xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+
+</fx:root>

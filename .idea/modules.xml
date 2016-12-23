@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MSH.iml" filepath="$PROJECT_DIR$/MSH.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MSHClientModule/MSHClientModule.iml" filepath="$PROJECT_DIR$/MSHClientModule/MSHClientModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MSHCommonModule/MSHCommonModule.iml" filepath="$PROJECT_DIR$/MSHCommonModule/MSHCommonModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MSHServerModule/MSHServerModule.iml" filepath="$PROJECT_DIR$/MSHServerModule/MSHServerModule.iml" />
+    </modules>
+  </component>
+</project>

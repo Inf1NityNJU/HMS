@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import ui.components.statebutton.StateButton?>
+<?import ui.components.tinybutton.TinyButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefWidth="920.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.componentcontroller.promotion.HotelPromotionCellController">
+    <children>
+        <Label fx:id="promotionNameLabel" alignment="CENTER" prefWidth="320.0" text="名称1" textFill="GREY">
+         <font>
+            <Font name="PingFang SC Regular" size="16.0" />
+         </font></Label>
+      <StackPane prefWidth="280.0">
+         <children>
+              <StateButton fx:id="promotionType" colorProperty="12B7F3" isActiveProperty="true" text="类型" />
+         </children>
+      </StackPane>
+        <Label fx:id="promotionDiscountLabel" alignment="CENTER" prefWidth="100.0" text="折扣" textFill="GREY">
+            <padding>
+                <Insets top="5.0" />
+            </padding>
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+         <font>
+            <Font name="PingFang SC Regular" size="16.0" />
+         </font></Label>
+      <StackPane prefWidth="220.0">
+         <children>
+            <TinyButton fx:id="detailButton" text="查看" onMouseClicked="#clickDetailButton"/>
+         </children>
+      </StackPane>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</HBox>

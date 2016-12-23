@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import ui.components.circlebutton.CircleButton?>
+<?import ui.components.mychoicebox.MyChoiceBox?>
+<?import ui.components.statebutton.StateButton?>
+<?import ui.components.titlelabel.TitleLabel?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefWidth="1000.0" spacing="40.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.65"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ui.componentcontroller.promotion.WebPromotionSearchPaneController">
+    <children>
+        <TitleLabel text="网站促销策略"/>
+        <HBox alignment="CENTER_LEFT" spacing="10.0">
+            <children>
+                <StateButton fx:id="allButton" colorProperty="F8E81C"
+                             onMouseClicked="#showAllPromotions" text="全部"/>
+                <StateButton fx:id="clientGradeButton" colorProperty="12B7F3"
+                             onMouseClicked="#showClientGradePromotions" text="会员等级折扣"/>
+                <StateButton fx:id="placeButton" colorProperty="00CCCC"
+                             onMouseClicked="#showPlacePromotions" text="会员商圈折扣"/>
+                <StateButton fx:id="specialDateButton" colorProperty="BC52FD"
+                             onMouseClicked="#showSpecialDatePromotions" text="特定期间折扣">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </StateButton>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <MyChoiceBox fx:id="typeChoiceBox" prefWidth="134.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="会员等级折扣"/>
+                            <String fx:value="会员商圈折扣"/>
+                            <String fx:value="特定期间折扣"/>
+                        </FXCollections>
+                    </items>
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </MyChoiceBox>
+                <CircleButton fx:id="addButton" onMouseClicked="#clickAddButton" typeProperty="Add">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </CircleButton>
+            </children>
+        </HBox>
+    </children>
+</VBox>

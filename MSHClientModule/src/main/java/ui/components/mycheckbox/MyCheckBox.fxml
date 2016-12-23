@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click" prefHeight="24.0" spacing="7.0" type="HBox" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane>
+         <children>
+            <Rectangle fx:id="borderRect" arcHeight="2.0" arcWidth="2.0" fill="#ffffff00" height="15.0" stroke="#00cccc" strokeType="INSIDE" width="15.0" />
+            <Rectangle fx:id="fillRect" arcHeight="1.0" arcWidth="1.0" fill="#00cccc" height="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="9.0" />
+         </children>
+      </StackPane>
+      <Label fx:id="textLabel" text="Label" textFill="#00cccc">
+         <font>
+            <Font name="PingFang SC Regular" size="16.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</fx:root>

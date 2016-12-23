@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../../../fonts/fontello.ttf');
+}
+
+.label {
+    -fx-pref-width: 26px;
+    -fx-pref-height: 26px;
+    -fx-background-color: #00cccc;
+    -fx-background-radius: 13px;
+    -fx-border-radius: 13px;
+    -fx-border-style: hidden;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "fontello";
+    -fx-font-size: 20px;
+}

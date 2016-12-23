@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="hBox" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #00000030;" stylesheets="@NavButton.css" type="HBox" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="currentRect" fill="#6abcc0" height="50.0" stroke="TRANSPARENT" strokeType="INSIDE" width="5.0" />
+      <Label fx:id="iconLabel" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" styleClass="icon-label" text="icon" textFill="#eeeeee">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="textLabel" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="text" textFill="#eeeeee">
+         <font>
+            <Font name="PingFang SC Regular" size="18.0" />
+         </font></Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</fx:root>

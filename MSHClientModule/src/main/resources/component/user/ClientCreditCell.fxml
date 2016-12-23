@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import ui.components.statebutton.StateButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="920.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.componentcontroller.user.ClientCreditCellController">
+    <children>
+      <Label fx:id="dateLabel" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="120.0" text="Label" textAlignment="CENTER" textFill="GREY">
+         <font>
+            <Font name="PingFang SC Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderIDLabel" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" text="Label" textAlignment="CENTER" textFill="GREY">
+         <font>
+            <Font name="PingFang SC Regular" size="14.0" />
+         </font>
+      </Label>
+      <StateButton fx:id="actionButton" alignment="CENTER" contentDisplay="CENTER" minWidth="-Infinity" textAlignment="CENTER" textFill="GREY" />
+      <Label fx:id="deltaLabel" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" text="Label" textAlignment="CENTER" textFill="GREY">
+         <font>
+            <Font name="PingFang SC Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="Label" textAlignment="CENTER" textFill="#00cccc">
+         <font>
+            <Font name="PingFang SC Regular" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</HBox>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import ui.components.commontextfield.CommonTextField?>
+<?import ui.components.largedatepicker.LargeDatePicker?>
+<?import ui.components.mycheckbox.MyCheckBox?>
+<?import ui.components.mychoicebox.MyChoiceBox?>
+<?import ui.components.myrangeslider.MyRangeSlider?>
+<?import ui.components.radioboxpane.RadioBoxPane?>
+<?import ui.components.selectpane.SelectPane?>
+<?import ui.components.sequencebutton.SequenceButton?>
+<?import java.lang.Integer?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefWidth="1000.0" spacing="40.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.componentcontroller.hotel.ClientHotelSearchPaneController">
+    <padding>
+        <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+    </padding>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" color="#40404080" radius="1.0" />
+    </effect>
+   <children>
+      <AnchorPane prefHeight="200.0">
+         <children>
+            <GridPane layoutX="-1.0" layoutY="160.0" prefWidth="920.0" vgap="20.0" AnchorPane.topAnchor="160.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+              </rowConstraints>
+               <children>
+                  <Label text="房间类型" textFill="#cccccc" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="PingFang SC Regular" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="房间价格" textFill="#cccccc" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="PingFang SC Regular" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="酒店星级" textFill="#cccccc" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="PingFang SC Regular" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="只显示预订过的酒店" textFill="#cccccc" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="PingFang SC Regular" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="酒店评分" textFill="#cccccc" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="PingFang SC Regular" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="2.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <MyRangeSlider fx:id="roomPriceSlider" prefix="￥" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <RadioBoxPane fx:id="roomTypePane" hgap="70.0" tileAlignment="TOP_LEFT" GridPane.columnIndex="1">
+                     <items>
+                        <MyCheckBox text="单人房" />
+                        <MyCheckBox text="大床房" />
+                        <MyCheckBox text="双人房" />
+                        <MyCheckBox text="家庭房" />
+                        <MyCheckBox text="套房" />
+                        <MyCheckBox text="经济房" />
+                        <MyCheckBox text="标准房" />
+                        <MyCheckBox text="高级房" />
+                        <MyCheckBox text="商务房" />
+                        <MyCheckBox text="奢华房" />
+                     </items>
+                  </RadioBoxPane>
+                  <HBox spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <MyChoiceBox fx:id="minScoreBox" minHeight="-Infinity" prefWidth="70.0">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <Integer fx:value="1" />
+                                 <Integer fx:value="2" />
+                                 <Integer fx:value="3" />
+                                 <Integer fx:value="4" />
+                                 <Integer fx:value="5" />
+                              </FXCollections>
+                           </items>
+                        </MyChoiceBox>
+                        <Label alignment="CENTER" prefHeight="30.0" text="-" textFill="#cccccc">
+                           <font>
+                              <Font name="PingFang SC Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <MyChoiceBox fx:id="maxScoreBox" minHeight="-Infinity" prefWidth="70.0">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <Integer fx:value="1" />
+                                 <Integer fx:value="2" />
+                                 <Integer fx:value="3" />
+                                 <Integer fx:value="4" />
+                                 <Integer fx:value="5" />
+                              </FXCollections>
+                           </items>
+                        </MyChoiceBox>
+                     </children>
+                  </HBox>
+                  <RadioBoxPane fx:id="starPane" hgap="86.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <items>
+                        <MyCheckBox text="五星" />
+                        <MyCheckBox text="四星" />
+                        <MyCheckBox text="三星" />
+                        <MyCheckBox text="二星" />
+                        <MyCheckBox text="一星" />
+                     </items>
+                  </RadioBoxPane>
+                  <MyCheckBox fx:id="orderedBox" text="" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <HBox alignment="CENTER_RIGHT" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <SequenceButton fx:id="scoreSequenceButton" onMouseClicked="#clickScoreSequenceButton" text="评分" />
+                        <SequenceButton fx:id="priceSequenceButton" onMouseClicked="#clickPriceSequenceButton" text="价格" />
+                        <SequenceButton fx:id="starSequenceButton" onMouseClicked="#clickStarSequenceButton" text="星级" />
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <CommonTextField fx:id="keywordTextField" layoutX="258.0" prefHeight="60.0" prefWidth="640.0" promptText="输入关键字" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="0.0" />
+            <SelectPane fx:id="roomQuantitySelect" labelWidth="201.0" text="房间数量" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="80.0">
+               <labels>
+                  <Label text="1 间房间" />
+                  <Label text="2 间房间" />
+                  <Label text="3 间房间" />
+                  <Label text="4 间房间" />
+                  <Label text="5 间以上" />
+               </labels>
+            </SelectPane>
+             <Button fx:id="searchButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#searchHotel" prefHeight="59.0" prefWidth="140.0" style="-fx-background-color: #00cccc; -fx-background-radius: 0; -fx-border-style: hidden;" text="搜 索" textFill="WHITE" AnchorPane.leftAnchor="780.0" AnchorPane.topAnchor="80.0">
+               <font>
+                  <Font name="PingFang SC Regular" size="20.0" />
+               </font>
+            </Button>
+            <LargeDatePicker fx:id="checkInDatePicker" layoutX="200.0" layoutY="81.0" prefHeight="60.0" prefWidth="291.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="80.0" />
+            <LargeDatePicker fx:id="checkOutDatePicker" layoutX="490.0" layoutY="80.0" prefHeight="60.0" prefWidth="291.0" AnchorPane.leftAnchor="490.0" />
+            <SelectPane fx:id="citySelect" labelWidth="141.0" text="地址">
+               <labels>
+                  <Label text="上海" />
+                  <Label text="南京" />
+                  <Label text="北京" />
+                  <Label text="呼和浩特" />
+                  <Label text="哈尔滨" />
+               </labels>
+            </SelectPane>
+            <SelectPane fx:id="placeSelect" labelWidth="141.0" text="商圈" AnchorPane.leftAnchor="140.0">
+               <labels>
+                  <Label text="仙林" />
+                  <Label text="新街口" />
+                  <Label text="汤山" />
+                  <Label text="江宁" />
+               </labels>
+            </SelectPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

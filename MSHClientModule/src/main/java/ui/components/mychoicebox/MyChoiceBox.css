@@ -1,0 +1,23 @@
+.choice-box {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #dddddd;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+.label {
+    -fx-text-fill: #808080;
+    -fx-font-size: 14px;
+    -fx-font-family: "PingFang SC";
+}
+.arrow {
+    -fx-background-color: #00cccc;
+}
+
+.context-menu {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #dddddd;
+}
+
+.context-menu .menu-item:hover, .context-menu .menu-item:focused {
+    -fx-background-color: #00cccc;
+}

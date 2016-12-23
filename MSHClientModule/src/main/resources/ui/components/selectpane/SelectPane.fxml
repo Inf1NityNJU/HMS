@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@SelectPane.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" onMouseExited="#hideOptions">
+    <children>
+        <TilePane fx:id="optionPane" hgap="10.0" prefWidth="240.0" styleClass="popupPane" tileAlignment="CENTER_LEFT" vgap="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="59.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </TilePane>
+        <Label fx:id="typeLabel" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="10.0" prefHeight="60.0" prefWidth="120.0" styleClass="typeLabel" text="Text" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" onMouseClicked="#showOptions">
+            <graphic>
+                <Polygon fill="#00cccc" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                    <points>
+                        <Double fx:value="0.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="20.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="10.0" />
+                        <Double fx:value="8.0" />
+                    </points>
+                </Polygon>
+            </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Label>
+    </children>
+</fx:root>
